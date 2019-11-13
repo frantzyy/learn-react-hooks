@@ -5,11 +5,12 @@ import './App.css';
 import Playground from './components/Playground/Playground';
 import PlaygroundObjectState from './components/Playground/PlaygroundObjectState';
 import PlaygroundContext from './components/Playground/PlaygroundContext';
+import PlaygroundContextWithHook from './components/Playground/PlaygroundContextWithHook';
 
 import TodoListClass from './components/Todo/TodoListClass';
 import TodoListFunction from './components/Todo/TodoListFunction';
 
-import {UserConsumer} from './UserContext';
+import {UserConsumer, UserProvider} from './UserContext';
 
 function App() {
   return (
@@ -19,15 +20,17 @@ function App() {
       <PlaygroundObjectState></PlaygroundObjectState>
        <Playground></Playground> */}
       
-          <UserConsumer>
-            {({user}) => user ? (
-              <PlaygroundContext></PlaygroundContext>
-            ) : (
+          {/* <UserConsumer>
+            {({user}) => user ? ( */}
+            <UserProvider>
+              <PlaygroundContextWithHook></PlaygroundContextWithHook>
+            </UserProvider>
+            {/* ) : (
               <p> please login</p>
             )
             }        
         </UserConsumer>
-     
+      */}
      
       
       

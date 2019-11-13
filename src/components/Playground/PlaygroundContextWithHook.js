@@ -1,5 +1,5 @@
 // https://egghead.io/lessons/react-use-the-usecontext-hook-to-consume-context-in-function-components
-
+// NOTE: you still need to use wrap the component with a UserProvider.
 import React, {useState, useContext} from "react";
 
 import { UserContext } from '../../UserContext';
@@ -21,7 +21,7 @@ const Playground = () => {
 
     return (
         <section>
-            <h3>Playground component</h3>
+            <h3>Playground component with useContext</h3>
             <p>Mirrors the input values</p>
             <p>hello {user}</p>
             <input 

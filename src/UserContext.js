@@ -3,7 +3,7 @@ import React from 'react';
 // allows us to export the full UserContext as well as each idividual component.
 // https://egghead.io/lessons/react-use-the-usecontext-hook-to-consume-context-in-function-components
 let UserContext;
-const {Provider, Consumer} = UserContext = React.createContext();
+const {Provider, Consumer} = (UserContext = React.createContext());
 
 // const [currentUser, setCurrentUser] = useState("chris");
 
@@ -25,7 +25,9 @@ class UserProvider extends React.Component {
     render() {
         return (
             <Provider value={{
-                user : this.state.currentUser
+                user: this.state.currentUser,
+                 onLogin: this.handleLogin,
+                 onLogout: this.handleLogout
             }}>
                 {this.props.children}
             </Provider>
