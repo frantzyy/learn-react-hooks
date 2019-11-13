@@ -3,11 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 
 import Playground from './components/Playground';
+import PlaygroundObjectState from './components/PlaygroundObjectState';
 
 function App() {
   return (
     <div className="App">
        <Playground></Playground>
+       <PlaygroundObjectState></PlaygroundObjectState>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
