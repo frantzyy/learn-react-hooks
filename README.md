@@ -19,6 +19,9 @@ https://egghead.io/lessons/react-use-contexttype-to-consume-context-in-a-react-c
 When using functional components you can use the useContext hook to access contexts.
 https://egghead.io/lessons/react-use-the-usecontext-hook-to-consume-context-in-function-components
 
+How test
+https://egghead.io/lessons/react-test-a-component-that-uses-a-react-context-consumer
+
 ### Tagging
 
 I've tagged commits through the various stages of this tutorial
