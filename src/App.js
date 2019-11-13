@@ -6,11 +6,13 @@ import Playground from './components/Playground';
 import PlaygroundObjectState from './components/PlaygroundObjectState';
 
 import TodoListClass from './components/Todo/TodoListClass';
+import TodoListFunction from './components/Todo/TodoListFunction';
 
 function App() {
   return (
     <div className="App">
       <TodoListClass></TodoListClass>
+      <TodoListFunction></TodoListFunction>
        <Playground></Playground>
        <PlaygroundObjectState></PlaygroundObjectState>
       <header className="App-header">

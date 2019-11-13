@@ -63,6 +63,7 @@ export default class TodoListClass extends Component {
         const { newTodo, todos } = this.state;
         return (
           <Container todos={todos}>
+            <h3>Todo class component</h3>
             <NewTodo
               onSubmit={this.handleNewSubmit}
               value={newTodo}
