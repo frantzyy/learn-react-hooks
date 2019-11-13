@@ -5,6 +5,12 @@ https://egghead.io/lessons/react-add-state-with-the-usestate-hook-to-a-react-fun
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### tagging
+
+I've tagged commits through the various stages of this tutorial
+
+git push --follow-tags
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -5,9 +5,12 @@ import './App.css';
 import Playground from './components/Playground';
 import PlaygroundObjectState from './components/PlaygroundObjectState';
 
+import TodoListClass from './components/Todo/TodoListClass';
+
 function App() {
   return (
     <div className="App">
+      <TodoListClass></TodoListClass>
        <Playground></Playground>
        <PlaygroundObjectState></PlaygroundObjectState>
       <header className="App-header">
