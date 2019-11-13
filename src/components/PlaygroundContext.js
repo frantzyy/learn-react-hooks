@@ -2,7 +2,7 @@
 
 import React, {useState} from "react";
 
-import UserContext from '../UserContext';
+import { UserConsumer } from '../UserContext';
 
 
 const Playground = () => {
@@ -36,8 +36,8 @@ const Playground = () => {
     }
 
     return (
-        <UserContext.Consumer>
-            {(user) => 
+        <UserConsumer>
+            {({user}) => 
                 <section>
                     <h3>Playground component</h3>
                     <p>Mirrors the input values</p>
@@ -53,12 +53,13 @@ const Playground = () => {
                     onChange={handleCheckboxToggle}>
                     </input>
                     <ul>
-                        <li>{text}</li>
-                        <li>{checked.toString()}</li>
+                        <li>Input value: {text}</li>
+                        <li>Checkbox value: {checked.toString()}</li>
+                        <li>Current User: {user}</li>
                     </ul>
                 </section>
             }
-        </UserContext.Consumer>
+        </UserConsumer>
     )
 
 }

@@ -9,20 +9,25 @@ import PlaygroundContext from './components/PlaygroundContext';
 import TodoListClass from './components/Todo/TodoListClass';
 import TodoListFunction from './components/Todo/TodoListFunction';
 
-import UserContext from './UserContext';
+import {UserConsumer} from './UserContext';
 
 function App() {
-  const [currentUser, setCurrentUser] = useState("chris");
-
   return (
     <div className="App">
       {/* <TodoListClass></TodoListClass>
       <TodoListFunction></TodoListFunction>
       <PlaygroundObjectState></PlaygroundObjectState>
        <Playground></Playground> */}
-      <UserContext.Provider value={currentUser}>
-        <PlaygroundContext></PlaygroundContext>
-      </UserContext.Provider>
+      
+          <UserConsumer>
+            {({user}) => user ? (
+              <PlaygroundContext></PlaygroundContext>
+            ) : (
+              <p> please login</p>
+            )
+            }        
+        </UserConsumer>
+     
      
       
       

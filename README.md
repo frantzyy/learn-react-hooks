@@ -1,21 +1,32 @@
-## learn react hooks
+## learn react hooks and context api
 
-This repo is following the egghead.io tutorial:
+### Hooks
+
+This repo is following the egghead.io tutorial for the Hooks examples:
 https://egghead.io/lessons/react-add-state-with-the-usestate-hook-to-a-react-function-component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Context API
 
-### tagging
+This repo is following the egghead.io tutorial for the Context examples:
+https://egghead.io/lessons/react-hide-the-implementation-details-of-a-context-provider
+
+### Tagging
 
 I've tagged commits through the various stages of this tutorial
 
 git push --follow-tags
 
-### react hook rules
+### Notes
 
 - hooks must be called at the top level.
 
 [https://reactjs.org/docs/hooks-rules.html](https://reactjs.org/docs/hooks-rules.html)
+
+- Create react app has been updated to come with an ESlint plugin by default to help enforce the rules above.
+
+### Project setup
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
