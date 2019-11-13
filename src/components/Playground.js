@@ -1,7 +1,9 @@
 import React, {useState} from "react";
 
-
 export default function Playground() {
+
+    //note: hooks must be called at the top level.
+    //https://reactjs.org/docs/hooks-rules.html
 
     // const state = useState("");
     // const text = state[0];  //current value of state
@@ -9,6 +11,8 @@ export default function Playground() {
 
     const [text, setText] = useState(""); // same as above but using destructor, cleaner.
     const [checked, setChecked] = useState(false);
+   
+    
 
 
     // multiple ways to handles this event since its a toggle.

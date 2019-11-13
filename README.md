@@ -11,6 +11,12 @@ I've tagged commits through the various stages of this tutorial
 
 git push --follow-tags
 
+### react hook rules
+
+- hooks must be called at the top level.
+
+[https://reactjs.org/docs/hooks-rules.html](https://reactjs.org/docs/hooks-rules.html)
+
 ## Available Scripts
 
 In the project directory, you can run:

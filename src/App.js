@@ -1,24 +1,35 @@
-import React from 'react';
+import React, {useState} from "react";
 import logo from './logo.svg';
 import './App.css';
 
 import Playground from './components/Playground';
 import PlaygroundObjectState from './components/PlaygroundObjectState';
+import PlaygroundContext from './components/PlaygroundContext';
 
 import TodoListClass from './components/Todo/TodoListClass';
 import TodoListFunction from './components/Todo/TodoListFunction';
 
+import UserContext from './UserContext';
+
 function App() {
+  const [currentUser, setCurrentUser] = useState("chris");
+
   return (
     <div className="App">
-      <TodoListClass></TodoListClass>
+      {/* <TodoListClass></TodoListClass>
       <TodoListFunction></TodoListFunction>
-       <Playground></Playground>
-       <PlaygroundObjectState></PlaygroundObjectState>
+      <PlaygroundObjectState></PlaygroundObjectState>
+       <Playground></Playground> */}
+      <UserContext.Provider value={currentUser}>
+        <PlaygroundContext></PlaygroundContext>
+      </UserContext.Provider>
+     
+      
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Learning React Hooks and Context API
         </p>
         <a
           className="App-link"
@@ -26,7 +37,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React {React.version}
+          React v{React.version}
         </a>
       </header>
      
