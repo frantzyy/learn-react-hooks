@@ -2,9 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Playground from './components/Playground';
+
 function App() {
   return (
     <div className="App">
+       <Playground></Playground>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -16,11 +19,13 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React {React.version}
         </a>
       </header>
+     
     </div>
   );
 }
+
 
 export default App;

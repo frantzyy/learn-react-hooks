@@ -1,3 +1,8 @@
+## learn react hooks
+
+This repo is following the egghead.io tutorial:
+https://egghead.io/lessons/react-add-state-with-the-usestate-hook-to-a-react-function-component
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
