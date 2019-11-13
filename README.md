@@ -10,6 +10,15 @@ https://egghead.io/lessons/react-add-state-with-the-usestate-hook-to-a-react-fun
 This repo is following the egghead.io tutorial for the Context examples:
 https://egghead.io/lessons/react-hide-the-implementation-details-of-a-context-provider
 
+Good example of login setup
+https://github.com/dceddia/use-react-context-for-state-management/tree/master/02-pass-data-with-a-callback-through-react-context/src
+
+When using class components you can assign a context type directly, but only one.
+https://egghead.io/lessons/react-use-contexttype-to-consume-context-in-a-react-class-without-a-consumer
+
+When using functional components you can use the useContext hook to access contexts.
+https://egghead.io/lessons/react-use-the-usecontext-hook-to-consume-context-in-function-components
+
 ### Tagging
 
 I've tagged commits through the various stages of this tutorial

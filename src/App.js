@@ -2,9 +2,9 @@ import React, {useState} from "react";
 import logo from './logo.svg';
 import './App.css';
 
-import Playground from './components/Playground';
-import PlaygroundObjectState from './components/PlaygroundObjectState';
-import PlaygroundContext from './components/PlaygroundContext';
+import Playground from './components/Playground/Playground';
+import PlaygroundObjectState from './components/Playground/PlaygroundObjectState';
+import PlaygroundContext from './components/Playground/PlaygroundContext';
 
 import TodoListClass from './components/Todo/TodoListClass';
 import TodoListFunction from './components/Todo/TodoListFunction';

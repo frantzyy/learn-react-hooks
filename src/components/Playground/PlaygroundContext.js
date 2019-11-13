@@ -2,7 +2,7 @@
 
 import React, {useState} from "react";
 
-import { UserConsumer } from '../UserContext';
+import { UserConsumer } from '../../UserContext';
 
 
 const Playground = () => {
