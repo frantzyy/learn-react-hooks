@@ -1,41 +1,34 @@
-import React, {Component} from "react";
+import React, {useState} from "react";
 
 
-export default class Playground extends Component {
-    constructor (...args) {
-        super(... args);
+export default function Playground() {
 
-        this.state = {
-            text: "", 
-            checked : false
-        };
-    }
+    // const state = useState("");
+    // const text = state[0];  //current value of state
+    // const setText = state[1]; //function to update state
 
-    render() {
-        const {text, checked } = this.state;
+    const [text, setText] = useState(""); // same as above but using destructor, cleaner.
+    const [checked, setChecked] = useState(false);
 
-        return (
-            <section>
-                <h3>Playground component</h3>
-                <p>The input box and checked box will be mirrored in the list to display state.</p>
-                <input 
-                type="text"
-                value={text}
-                onChange={e => this.setState({text:e.target.value})}>
-                </input>
-                <input 
-                type="checkbox"
-                value={checked}
-                onChange={e => this.setState({checked:e.target.checked})}>
-                </input>
-                <ul>
-                    <li>{text}</li>
-                    <li>{checked.toString()}</li>
-                </ul>
-            </section>
-        )
-
-
-    }
+    return (
+        <section>
+            <h3>Playground component</h3>
+            <p>Mirrors the input values</p>
+            <input 
+            type="text"
+            value={text}
+            onChange={e => setText(e.target.value)}>
+            </input>
+            <input 
+            type="checkbox"
+            value={checked}
+            onChange={e => setChecked(e.target.checked)}>
+            </input>
+            <ul>
+                <li>{text}</li>
+                <li>{checked.toString()}</li>
+            </ul>
+        </section>
+    )
 
 }
